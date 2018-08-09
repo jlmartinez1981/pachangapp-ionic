@@ -51,4 +51,12 @@ export class ListMasterPage {
       item: item
     });
   }
+
+  getFormattedDate(item: Item): string {
+    const date : Date = item.event_date;
+    const formattedDate : string = date.getFullYear().toString() + '/' + 
+    date.getMonth().toString() + '/' +  date.getDate().toString() + ' ' +
+    date.getHours().toString() + ':' + date.getMinutes().toString();
+    return formattedDate;
+  }
 }

@@ -22,8 +22,9 @@
         </ion-avatar>
         <h2>{{item.name}}</h2>
         <p>{{item.about}}</p>
-        <p>{{item.about}}</p>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+        <p>{{getFormattedDate(item)}}</p>
+        <p>{{item.current_users - item.min_users}}</p>
+        <ion-note item-end *ngIf="item.current_users - item.min_users < 0">Faltan {{item.min_users - item.current_users}} participantes.</ion-note>
       </button>
 
       <ion-item-options>

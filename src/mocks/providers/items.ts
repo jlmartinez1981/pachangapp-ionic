@@ -16,39 +16,31 @@ export class Items {
   constructor() {
     let items = [
       {
-        "name": "Burt Bear",
+        "name": "Cracks del balón",
         "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "about": "Amigos UJI.",
+        "event_date": new Date(),
+        "min_users": 10,
+        "max_users": 14,
+        "current_users": 8
       },
       {
-        "name": "Charlie Cheetah",
+        "name": "Partidos Sindicalistas",
         "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "about": "Amigos sindical.",
+        "event_date": new Date(),
+        "min_users": 10,
+        "max_users": 12,
+        "current_users": 9
       },
       {
-        "name": "Donald Duck",
+        "name": "Equipo veteranos",
         "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
-      },
-      {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
-      },
-      {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
-      },
-      {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
-      },
-      {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "about": "Equipo Liga Veteranos.",
+        "event_date": new Date(),
+        "min_users": 11,
+        "max_users": 17,
+        "current_users": 12
       }
     ];
 
