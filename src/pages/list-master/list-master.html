@@ -23,8 +23,11 @@
         <h2>{{item.name}}</h2>
         <p>{{item.about}}</p>
         <p>{{getFormattedDate(item)}}</p>
-        <p>{{item.current_users - item.min_users}}</p>
-        <ion-note item-end *ngIf="item.current_users - item.min_users < 0">Faltan {{item.min_users - item.current_users}} participantes.</ion-note>
+        <p *ngIf="false">{{item.current_users - item.min_users}}</p>
+        <ion-note item-end *ngIf="(item.current_users - item.min_users < 0); else complete">Faltan {{item.min_users - item.current_users}} participantes.</ion-note>
+        <ng-template #complete>
+          <ion-note item-end>Participantes completos.</ion-note>
+        </ng-template>
       </button>
 
       <ion-item-options>
